@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25540EC88B58AB9495FC2535 /* Pods_ChartsPOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C67C30233E10711818EBA9 /* Pods_ChartsPOC.framework */; };
 		5E9860BD1D646BCE0059A24E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9860BC1D646BCE0059A24E /* AppDelegate.swift */; };
 		5E9860BF1D646BCE0059A24E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9860BE1D646BCE0059A24E /* ViewController.swift */; };
 		5E9860C21D646BCE0059A24E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E9860C01D646BCE0059A24E /* Main.storyboard */; };
 		5E9860C41D646BCE0059A24E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E9860C31D646BCE0059A24E /* Assets.xcassets */; };
 		5E9860C71D646BCE0059A24E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E9860C51D646BCE0059A24E /* LaunchScreen.storyboard */; };
+		5E9860D71D64A59A0059A24E /* ChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9860D61D64A59A0059A24E /* ChartCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23C67C30233E10711818EBA9 /* Pods_ChartsPOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChartsPOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		533ADC721EE5DC0AB7A764C9 /* Pods-ChartsPOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartsPOC.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChartsPOC/Pods-ChartsPOC.release.xcconfig"; sourceTree = "<group>"; };
 		5E9860B91D646BCE0059A24E /* ChartsPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartsPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E9860BC1D646BCE0059A24E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E9860BE1D646BCE0059A24E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		5E9860C31D646BCE0059A24E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E9860C61D646BCE0059A24E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E9860C81D646BCE0059A24E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E9860D61D64A59A0059A24E /* ChartCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartCell.swift; sourceTree = "<group>"; };
+		9223AF45F8697192FBF8E40B /* Pods-ChartsPOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartsPOC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChartsPOC/Pods-ChartsPOC.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25540EC88B58AB9495FC2535 /* Pods_ChartsPOC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				5E9860BB1D646BCE0059A24E /* ChartsPOC */,
 				5E9860BA1D646BCE0059A24E /* Products */,
+				D2832A342F47827DD2D01F92 /* Pods */,
+				DDCF184F99F0F9C6F3B5844E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +69,26 @@
 				5E9860C31D646BCE0059A24E /* Assets.xcassets */,
 				5E9860C51D646BCE0059A24E /* LaunchScreen.storyboard */,
 				5E9860C81D646BCE0059A24E /* Info.plist */,
+				5E9860D61D64A59A0059A24E /* ChartCell.swift */,
 			);
 			path = ChartsPOC;
+			sourceTree = "<group>";
+		};
+		D2832A342F47827DD2D01F92 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9223AF45F8697192FBF8E40B /* Pods-ChartsPOC.debug.xcconfig */,
+				533ADC721EE5DC0AB7A764C9 /* Pods-ChartsPOC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DDCF184F99F0F9C6F3B5844E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23C67C30233E10711818EBA9 /* Pods_ChartsPOC.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E9860CB1D646BCE0059A24E /* Build configuration list for PBXNativeTarget "ChartsPOC" */;
 			buildPhases = (
+				2B6C8AE9031835B33591B784 /* [CP] Check Pods Manifest.lock */,
 				5E9860B51D646BCE0059A24E /* Sources */,
 				5E9860B61D646BCE0059A24E /* Frameworks */,
 				5E9860B71D646BCE0059A24E /* Resources */,
+				7B28207C6EB0CE946FAE32FB /* [CP] Embed Pods Frameworks */,
+				765F1FB88CDF5D7AD4AE69E2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,11 +160,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2B6C8AE9031835B33591B784 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		765F1FB88CDF5D7AD4AE69E2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChartsPOC/Pods-ChartsPOC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B28207C6EB0CE946FAE32FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChartsPOC/Pods-ChartsPOC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5E9860B51D646BCE0059A24E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E9860D71D64A59A0059A24E /* ChartCell.swift in Sources */,
 				5E9860BF1D646BCE0059A24E /* ViewController.swift in Sources */,
 				5E9860BD1D646BCE0059A24E /* AppDelegate.swift in Sources */,
 			);
@@ -249,6 +328,7 @@
 		};
 		5E9860CC1D646BCE0059A24E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9223AF45F8697192FBF8E40B /* Pods-ChartsPOC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ChartsPOC/Info.plist;
@@ -260,6 +340,7 @@
 		};
 		5E9860CD1D646BCE0059A24E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 533ADC721EE5DC0AB7A764C9 /* Pods-ChartsPOC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ChartsPOC/Info.plist;
@@ -288,6 +369,7 @@
 				5E9860CD1D646BCE0059A24E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
